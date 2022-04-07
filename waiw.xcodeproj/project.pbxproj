@@ -13,6 +13,9 @@
 		00C5FB0127FF80DC00D8D38A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00C5FAFF27FF80DC00D8D38A /* Main.storyboard */; };
 		00C5FB0327FF80E200D8D38A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00C5FB0227FF80E200D8D38A /* Assets.xcassets */; };
 		00C5FB0627FF80E200D8D38A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00C5FB0427FF80E200D8D38A /* LaunchScreen.storyboard */; };
+		00C5FB0F27FF8BE200D8D38A /* LetterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C5FB0E27FF8BE200D8D38A /* LetterModel.swift */; };
+		00C5FB1127FF8C2800D8D38A /* AlphabetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C5FB1027FF8C2800D8D38A /* AlphabetModel.swift */; };
+		00C5FB1327FF8CDB00D8D38A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C5FB1227FF8CDB00D8D38A /* Constants.swift */; };
 		CBE62115AA8BA26A95BD09D8 /* Pods_waiw.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A86BE62E3B9892C27320D5F /* Pods_waiw.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +28,9 @@
 		00C5FB0227FF80E200D8D38A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		00C5FB0527FF80E200D8D38A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		00C5FB0727FF80E200D8D38A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00C5FB0E27FF8BE200D8D38A /* LetterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterModel.swift; sourceTree = "<group>"; };
+		00C5FB1027FF8C2800D8D38A /* AlphabetModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlphabetModel.swift; sourceTree = "<group>"; };
+		00C5FB1227FF8CDB00D8D38A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		6B607B57F802A02733F5A439 /* Pods-waiw.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-waiw.debug.xcconfig"; path = "Target Support Files/Pods-waiw/Pods-waiw.debug.xcconfig"; sourceTree = "<group>"; };
 		95483AD8BD282047484200EB /* Pods-waiw.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-waiw.release.xcconfig"; path = "Target Support Files/Pods-waiw/Pods-waiw.release.xcconfig"; sourceTree = "<group>"; };
 		9A86BE62E3B9892C27320D5F /* Pods_waiw.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_waiw.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,7 +69,9 @@
 		00C5FAF827FF80DC00D8D38A /* waiw */ = {
 			isa = PBXGroup;
 			children = (
+				00C5FB0D27FF8BC300D8D38A /* Model */,
 				00C5FAF927FF80DC00D8D38A /* AppDelegate.swift */,
+				00C5FB1227FF8CDB00D8D38A /* Constants.swift */,
 				00C5FAFB27FF80DC00D8D38A /* SceneDelegate.swift */,
 				00C5FAFD27FF80DC00D8D38A /* ViewController.swift */,
 				00C5FAFF27FF80DC00D8D38A /* Main.storyboard */,
@@ -74,13 +82,21 @@
 			path = waiw;
 			sourceTree = "<group>";
 		};
+		00C5FB0D27FF8BC300D8D38A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				00C5FB0E27FF8BE200D8D38A /* LetterModel.swift */,
+				00C5FB1027FF8C2800D8D38A /* AlphabetModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		49F89DF09A12A2FC23A329F5 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				6B607B57F802A02733F5A439 /* Pods-waiw.debug.xcconfig */,
 				95483AD8BD282047484200EB /* Pods-waiw.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -207,9 +223,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00C5FB0F27FF8BE200D8D38A /* LetterModel.swift in Sources */,
 				00C5FAFE27FF80DC00D8D38A /* ViewController.swift in Sources */,
 				00C5FAFA27FF80DC00D8D38A /* AppDelegate.swift in Sources */,
 				00C5FAFC27FF80DC00D8D38A /* SceneDelegate.swift in Sources */,
+				00C5FB1127FF8C2800D8D38A /* AlphabetModel.swift in Sources */,
+				00C5FB1327FF8CDB00D8D38A /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

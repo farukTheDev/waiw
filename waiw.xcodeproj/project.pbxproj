@@ -13,6 +13,7 @@
 		00C5FB0127FF80DC00D8D38A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00C5FAFF27FF80DC00D8D38A /* Main.storyboard */; };
 		00C5FB0327FF80E200D8D38A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00C5FB0227FF80E200D8D38A /* Assets.xcassets */; };
 		00C5FB0627FF80E200D8D38A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00C5FB0427FF80E200D8D38A /* LaunchScreen.storyboard */; };
+		CBE62115AA8BA26A95BD09D8 /* Pods_waiw.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A86BE62E3B9892C27320D5F /* Pods_waiw.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		00C5FB0227FF80E200D8D38A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		00C5FB0527FF80E200D8D38A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		00C5FB0727FF80E200D8D38A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B607B57F802A02733F5A439 /* Pods-waiw.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-waiw.debug.xcconfig"; path = "Target Support Files/Pods-waiw/Pods-waiw.debug.xcconfig"; sourceTree = "<group>"; };
+		95483AD8BD282047484200EB /* Pods-waiw.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-waiw.release.xcconfig"; path = "Target Support Files/Pods-waiw/Pods-waiw.release.xcconfig"; sourceTree = "<group>"; };
+		9A86BE62E3B9892C27320D5F /* Pods_waiw.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_waiw.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBE62115AA8BA26A95BD09D8 /* Pods_waiw.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				00C5FAF827FF80DC00D8D38A /* waiw */,
 				00C5FAF727FF80DC00D8D38A /* Products */,
+				49F89DF09A12A2FC23A329F5 /* Pods */,
+				7A5533FF53AA1E2330C17F6F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,24 @@
 			path = waiw;
 			sourceTree = "<group>";
 		};
+		49F89DF09A12A2FC23A329F5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6B607B57F802A02733F5A439 /* Pods-waiw.debug.xcconfig */,
+				95483AD8BD282047484200EB /* Pods-waiw.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7A5533FF53AA1E2330C17F6F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9A86BE62E3B9892C27320D5F /* Pods_waiw.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00C5FB0A27FF80E200D8D38A /* Build configuration list for PBXNativeTarget "waiw" */;
 			buildPhases = (
+				982B65FBC5A67FB46638F4A0 /* [CP] Check Pods Manifest.lock */,
 				00C5FAF227FF80DC00D8D38A /* Sources */,
 				00C5FAF327FF80DC00D8D38A /* Frameworks */,
 				00C5FAF427FF80DC00D8D38A /* Resources */,
+				508209B57D5361F88ADE67A7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		508209B57D5361F88ADE67A7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-waiw/Pods-waiw-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-waiw/Pods-waiw-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-waiw/Pods-waiw-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		982B65FBC5A67FB46638F4A0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-waiw-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		00C5FAF227FF80DC00D8D38A /* Sources */ = {
@@ -284,6 +353,7 @@
 		};
 		00C5FB0B27FF80E200D8D38A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B607B57F802A02733F5A439 /* Pods-waiw.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -312,6 +382,7 @@
 		};
 		00C5FB0C27FF80E200D8D38A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95483AD8BD282047484200EB /* Pods-waiw.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
